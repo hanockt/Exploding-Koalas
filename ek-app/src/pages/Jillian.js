@@ -1,5 +1,5 @@
 import React from "react";
-import jillian from '../Jillian.jpg';
+import jillian from '../images/Jillian.jpg';
 export default function Jillian() {
     return (
         <section id="Jillian">
@@ -11,7 +11,7 @@ export default function Jillian() {
             <div> 
                 <a id="arrow" href="./Home.js"> &larr; </a>
             </div>
-            
+
             <div>
                     <img class="personal" src = {jillian} />
                 <div>

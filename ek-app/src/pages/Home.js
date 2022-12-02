@@ -1,9 +1,9 @@
 import React from "react";
-import koala from '../Koala.png';
-import jillian from '../Jillian.jpg';
-import hanock from '../Hanock.PNG';
-import william from '../William.jpg';
-import gelila from '../Gelila.jpg';
+import koala from '../images/Koala.png';
+import jillian from '../images/Jillian.jpg';
+import hanock from '../images/Hanock.PNG';
+import william from '../images/William.jpg';
+import gelila from '../images/Gelila.jpg';
 
 export default function Home() {
     return (
