@@ -1,15 +1,24 @@
+import React from 'react';
 import './index.css';
-import Home from "./pages/Home"
-import Jillian from "./pages/Jillian";
-import William from "./pages/William";
-
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Home from './pages/Home';
+import Jillian from './pages/Jillian';
+import William from './pages/William';
+import Gelila from './pages/Gelila';
+import Hanock from './pages/Hanock';
+  
 function App() {
-  return (
-    <main className="text-gray-400 bg-gray-900 body-font">
-    
-      <Home />
-    </main>
-  );
+return (
+    <Router>
+    <Routes>
+        <Route exact path='/' exact element={<Home />} />
+        <Route path='/Jillian' element={<Jillian/>} />
+        <Route path='/William' element={<William/>} />
+        <Route path='/Gelila' element={<Gelila/>} />
+        <Route path='/Hanock' element={<Hanock/>} />
+    </Routes>
+    </Router>
+);
 }
-
+  
 export default App;
