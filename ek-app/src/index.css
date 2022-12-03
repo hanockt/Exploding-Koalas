@@ -37,7 +37,6 @@ img.personal {
   font-size: 50px;
   color: #FFFFFF;
   text-decoration: none;
-
 }
 
 ul {
@@ -100,4 +99,52 @@ h1 {
   border-radius: 30px;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+iframe {
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border-color: white;
+  border-style:double;
+}
+
+
+img.movies {
+  width: 70%;
+}
+
+
+.column {
+  float: left;
+  width: 24%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.text_row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text_column {
+  float: left;
+  width: 31%;
+  padding: 5px;
+}
+
+.icons {
+  width: 200px;
+  height: 200px;
+  left: 337px;
+  top: 3849px;
+
+  background: #D9D9D9;
+  border-radius: 30px;
 }
