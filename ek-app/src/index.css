@@ -1,12 +1,14 @@
 body {
   background-image: linear-gradient(rgb(105,201,253), rgb(149,223,148));
   background-repeat: no-repeat;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: row;
   font-family: 'Poppins';
+  color: #FFFFFF;
 }
 
 img {
@@ -22,18 +24,20 @@ img.home {
 
 img.personal {
   width: 250px; 
+  margin-bottom: 3%;
 }
 
-#koala {
+img.plain {
   width: 200px; 
   box-shadow: 0px 0px 0px #FFFFFF;
   border: 0px solid;
+  margin-top: 0;
 }
 
-#arrow {
+.arrow {
   position: absolute;
   left: 60px;
-  top: 0px;
+  top: 40px;
   font-size: 50px;
   color: #FFFFFF;
   text-decoration: none;
@@ -48,10 +52,7 @@ ul {
 
 h1 {
   display: inline-block;
-
-  left: 543px;
-  top: 171px;
-
+  
   text-align: center;
   font-weight: 600;
   font-size: 30px;
@@ -85,14 +86,21 @@ h1 {
   box-shadow: 0px 0px 20px #FFFFFF;
   border-radius: 30px;
   padding: 3%;
-  margin: 3%;
-  
+  margin-bottom: 3%;
+}
+
+.text-box-personal {
+  padding: 1%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .website-button {
   display: inline-block;
   text-align: center;
-  padding: 0;
+
+  padding: 0; 
+
   width: 25%;
   background: #B2CBEF;
   box-shadow: 0px 5px 20px rgba(226, 226, 226, 0.8);

@@ -4,8 +4,11 @@ import jillian from '../images/Jillian.jpg';
 import hanock from '../images/Hanock.PNG';
 import william from '../images/William.jpg';
 import gelila from '../images/Gelila.jpg';
+import branch1 from '../images/branch1.png';
+import branch2 from '../images/branch2.png';
+import {Link } from "react-router-dom";
 
-export default function Home() {
+const Home = () => {
     return (
         <section id="Home">
             <head>
@@ -16,14 +19,16 @@ export default function Home() {
             <div>
                 <h1> Exploding Koalas </h1>
                 <div>
-                    <img id="koala" src={koala} />
+                    <img class="plain" src={branch1} />
+                    <img class="plain" src={koala} />
+                    <img class="plain" src={branch2} />
 
                     <div class="person-container">
                         <img class="home" src={william} />
                         <div class="person-description">
                             <div class="text-box"> Hello, I’m William! </div>
                             <div class="text-box"> I’m a sophomore planning to double in InfoDesign and IMDM. Next semester I want to be a Designer at Hack4Impact! </div>
-                            <a class="website-button" href="./William"> My Website </a>
+                            <Link class="website-button" to='/William'> My Website </Link>
                         </div>
                     </div>
 
@@ -31,7 +36,7 @@ export default function Home() {
                         <div class="person-description">
                             <div class="text-box"> Hello, I’m Gelila! </div>
                             <div class="text-box"> I’m a sophomore studying Computer Science. Next Semester I want to be a PM at Hack4Impact! </div>
-                            <a class="website-button" href="./Gelila"> My Website </a>
+                            <Link class="website-button" to='/Gelila'> My Website </Link>
                         </div>
                         <img class="home" src={gelila} />
                     </div>
@@ -41,15 +46,15 @@ export default function Home() {
                         <div class="person-description">
                             <div class="text-box"> Hello, I’m Hanock! </div>
                             <div class="text-box"> I’m a junior studying Computer Science. Next semester I want to be a Tech Lead at Hack4Impact! </div>
-                            <a class="website-button" href="./Hanock"> My Website </a>
+                            <Link class="website-button" to='/Hanock'> My Website </Link>
                         </div>
                     </div>
 
                     <div class="person-container">
                         <div class="person-description">
                             <div class="text-box"> Hello, I’m Jillian! </div>
-                            <div class="text-box"> I’m a sophomore studying Computer Science. Next semester I want to be an Engineer at Hack4Impact! </div>     s
-                            <a class="website-button" HREF="https://www.homeandlearn.co.uk/WD/wds5pA.html"> My Website </a>
+                            <div class="text-box"> I’m a sophomore studying Computer Science. Next semester I want to be an Engineer at Hack4Impact! </div> 
+                            <Link class="website-button" to='/Jillian' autoFocus> My Website </Link>
                         </div>
                         <img class="home" src={jillian} />
                     </div>
@@ -57,4 +62,6 @@ export default function Home() {
             </div>
         </section>
     );
-}
+};
+
+export default Home;
