@@ -79,11 +79,11 @@ export default function Gelila() {
 
             <div class="row">
                 <a href="https://www.instagram.com/gelila.kebede/" target="_blank" rel="noreferrer"> 
-                    <img class="icons" src={instagram} alt="instagram icon"/>
+                    <img class="icons icon-hover" src={instagram} alt="instagram icon"/>
                 </a>
                 
                 <a href="https://www.linkedin.com/in/gelila-kebede/" target="_blank" rel="noreferrer"> 
-                    <img class="icons" src={linkedin} alt="linkedin icon"/>
+                    <img class="icons icon-hover" src={linkedin} alt="linkedin icon"/>
                 </a>
             </div>
         </section>

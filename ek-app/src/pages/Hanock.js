@@ -31,9 +31,12 @@ export default function Hanock() {
                     Lo and behold, music was a secret passion of mine.    
                 </p>
                 
-                <video class="vid" width="360" height="202" controls>
-                    <source src={hanock_song} type="video/mp4" />
-                </video>
+                <div class="vid_box">
+                    <video class="vid" width="370" height="207" controls>
+                        <source src={hanock_song} type="video/mp4" />
+                    </video>
+                </div>
+                
                
             </div>
 
@@ -59,13 +62,13 @@ export default function Hanock() {
 
             <div class="row">
                 <a href="https://www.linkedin.com/in/hanock-tsegaye-007280189/">
-                    <img class="icons" src={linkedin} alt="linkedin icon"/>
+                    <img class="icons icon-hover" src={linkedin} alt="linkedin icon"/>
                 </a>
                 <a href="https://www.instagram.com/kippy_u/">
-                    <img class="icons" src={instagram} alt="instagram icon"/>
+                    <img class="icons icon-hover" src={instagram} alt="instagram icon"/>
                 </a>
                 <a href="https://www.youtube.com/channel/UCpsM8UwW-xBLkdP8e8efHmQ">
-                    <img class="icons" src={youtube} alt="youtube icon"/>
+                    <img class="icons icon-hover" src={youtube} alt="youtube icon"/>
                 </a>
                 
             </div>
