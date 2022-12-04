@@ -19,12 +19,12 @@ const Home = () => {
             <div>
                 <h1> Exploding Koalas </h1>
                 <div>
-                    <img class="plain" src={branch1} />
-                    <img class="plain" src={koala} />
-                    <img class="plain" src={branch2} />
+                    <img alt="" class="plain" src={branch1} />
+                    <img alt="koala" class="plain" src={koala} />
+                    <img alt="" class="plain" src={branch2} />
 
                     <div class="person-container">
-                        <img class="home" src={william} />
+                        <img alt="william headshot" class="home" src={william} />
                         <div class="person-description">
                             <div class="text-box"> Hello, I’m William! </div>
                             <div class="text-box"> I’m a sophomore planning to double in InfoDesign and IMDM. Next semester I want to be a Designer at Hack4Impact! </div>
@@ -35,14 +35,14 @@ const Home = () => {
                     <div class="person-container">
                         <div class="person-description">
                             <div class="text-box"> Hello, I’m Gelila! </div>
-                            <div class="text-box"> I’m a sophomore studying Computer Science. Next Semester I want to be a PM at Hack4Impact! </div>
+                            <div class="text-box"> I’m a sophomore studying Computer Science. Next Semester I want to be an Engineer at Hack4Impact! </div>
                             <Link class="website-button" to='/Gelila'> My Website </Link>
                         </div>
-                        <img class="home" src={gelila} />
+                        <img alt="gelila headshot" class="home" src={gelila} />
                     </div>
 
                     <div class="person-container">
-                        <img class="home" src={hanock} />
+                        <img alt="hanock headshot" class="home" src={hanock} />
                         <div class="person-description">
                             <div class="text-box"> Hello, I’m Hanock! </div>
                             <div class="text-box"> I’m a junior studying Computer Science. Next semester I want to be a Tech Lead at Hack4Impact! </div>
@@ -56,7 +56,7 @@ const Home = () => {
                             <div class="text-box"> I’m a sophomore studying Computer Science. Next semester I want to be an Engineer at Hack4Impact! </div> 
                             <Link class="website-button" to='/Jillian' autoFocus> My Website </Link>
                         </div>
-                        <img class="home" src={jillian} />
+                        <img alt="jillian headshot" class="home" src={jillian} />
                     </div>
                 </div>
             </div>
