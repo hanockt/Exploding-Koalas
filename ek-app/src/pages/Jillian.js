@@ -19,9 +19,9 @@ const Jillian = () => {
 
             <div>   
                 <div> 
-                    <img class="plain" src={branch1} />
-                    <img class="personal" src={jillian_img} />
-                    <img class="plain" src={branch2} />
+                    <img alt="" class="plain" src={branch1} />
+                    <img alt="" class="personal" src={jillian_img} />
+                    <img alt="" class="plain" src={branch2} />
                     
                 </div>
                 <div>

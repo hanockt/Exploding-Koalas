@@ -19,9 +19,9 @@ const William = () => {
 
             <div>   
                 <div> 
-                    <img class="plain" src={branch1} />
-                    <img class="personal" src={william_img} />
-                    <img class="plain" src={branch2} />
+                    <img alt="" class="plain" src={branch1} />
+                    <img alt="" class="personal" src={william_img} />
+                    <img alt="" class="plain" src={branch2} />
                     
                 </div>
 

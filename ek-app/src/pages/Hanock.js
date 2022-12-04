@@ -1,10 +1,13 @@
 import React from "react";
 import hanock from '../images/Hanock.PNG';
-import instagram from '../images/instagram_icon.png'
-import linkedin from '../images/linkedin_icon.png'
-import youtube from '../images/youtube_icon.png'
-import hanock_drawing from '../images/hanock_drawing.png'
-import legend_of_zelda from '../images/legend_of_zelda.gif'
+import instagram from '../images/instagram_icon.png';
+import linkedin from '../images/linkedin_icon.png';
+import youtube from '../images/youtube_icon.png';
+import hanock_drawing from '../images/hanock_drawing.png';
+import legend_of_zelda from '../images/legend_of_zelda.gif';
+import hanock_song from '../images/hanock_song.mp4';
+import branch1 from '../images/branch1.png';
+import branch2 from '../images/branch2.png';
 import { Link } from "react-router-dom";
 
 export default function Hanock() {
@@ -17,9 +20,9 @@ export default function Hanock() {
             </div>
 
             <div>
-                {/**<img class="plain" src={branch1} /> */} 
-                <img class="personal" src={hanock} alt="Hanock headshot"/>
-                {/**<img class="plain" src={branch2} /> */} 
+                <img alt="" class="plain" src={branch1} /> 
+                <img class="personal" src={hanock} alt="Hanock headshot" />
+                <img alt="" class="plain" src={branch2} /> 
             </div>
  
             <div class="text-box text-box-personal">
@@ -27,11 +30,11 @@ export default function Hanock() {
                 <p> During quarantine, I began trying new hobbies in my boredom. 
                     Lo and behold, music was a secret passion of mine.    
                 </p>
-                {/**
-                <video width="540" height="303" controls>
-                    <source src="Kippy-Jump-Up-Beneath-The-Stars.mp4" type="video/mp4"> </source> 
+                
+                <video class="vid" width="360" height="202" controls>
+                    <source src={hanock_song} type="video/mp4" />
                 </video>
-                */}
+               
             </div>
 
             <div class="text-box text-box-personal">
@@ -42,7 +45,6 @@ export default function Hanock() {
 
             <div class="text-box text-box-personal">
                 <h2> Video Games </h2>
-                <p> Been drawing for a while. It's a very therapeutic process. </p>
                 <img class="home" src={legend_of_zelda} alt="legend of zelda gif"/>
                 <p> Some of my current favorite games! </p>
                 <ul> 
@@ -56,9 +58,16 @@ export default function Hanock() {
 
 
             <div class="row">
-                <img class="icons" src={instagram} alt="instagram icon"/>
-                <img class="icons" src={linkedin} alt="linkedin icon"/>
-                <img class="icons" src={youtube} alt="youtube icon"/>
+                <a href="https://www.linkedin.com/in/hanock-tsegaye-007280189/">
+                    <img class="icons" src={linkedin} alt="linkedin icon"/>
+                </a>
+                <a href="https://www.instagram.com/kippy_u/">
+                    <img class="icons" src={instagram} alt="instagram icon"/>
+                </a>
+                <a href="https://www.youtube.com/channel/UCpsM8UwW-xBLkdP8e8efHmQ">
+                    <img class="icons" src={youtube} alt="youtube icon"/>
+                </a>
+                
             </div>
 
         </section>

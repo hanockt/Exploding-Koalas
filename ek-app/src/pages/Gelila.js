@@ -4,8 +4,10 @@ import schitts_creek from '../images/schitts_creek.jpg';
 import succession from '../images/succession.jpg';
 import beautiful_boy from '../images/beautiful_boy.jpg';
 import the_batman from '../images/the_batman.jpg';
-import instagram from '../images/instagram_icon.png'
-import linkedin from '../images/linkedin_icon.png'
+import instagram from '../images/instagram_icon.png';
+import linkedin from '../images/linkedin_icon.png';
+import branch1 from '../images/branch1.png';
+import branch2 from '../images/branch2.png';
 import { Link } from "react-router-dom";
 
 export default function Gelila() {
@@ -19,9 +21,9 @@ export default function Gelila() {
             </div>
 
             <div>
-                {/**<img class="plain" src={branch1} /> */} 
+                <img class="plain" src={branch1} alt="" /> 
                 <img class="personal" src={gelila} alt="Gelila headshot"/>
-                {/**<img class="plain" src={branch2} /> */} 
+                <img class="plain" src={branch2} alt="" /> 
             </div>
             
 
