@@ -43,6 +43,11 @@ img.plain {
   text-decoration: none;
 }
 
+.arrow:hover {
+  transform: scale(1.4);
+  color: #FFFFFF;
+}
+
 ul {
   display: inline-block;
   text-align: left;
@@ -98,15 +103,19 @@ h1 {
 .website-button {
   display: inline-block;
   text-align: center;
-
   padding: 0; 
-
   width: 25%;
   background: #B2CBEF;
   box-shadow: 0px 5px 20px rgba(226, 226, 226, 0.8);
   border-radius: 30px;
   color: #FFFFFF;
   text-decoration: none;
+  transition: all 0.5s;
+}
+
+.website-button:hover {
+  transform: scale(1.2);
+  background-color: #6b7a90;
 }
 
 iframe {
