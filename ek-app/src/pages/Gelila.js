@@ -4,6 +4,9 @@ import schitts_creek from '../images/schitts_creek.jpg';
 import succession from '../images/succession.jpg';
 import beautiful_boy from '../images/beautiful_boy.jpg';
 import the_batman from '../images/the_batman.jpg';
+import instagram from '../images/instagram_icon.png'
+import linkedin from '../images/linkedin_icon.png'
+import { Link } from "react-router-dom";
 
 export default function Gelila() {
     return (
@@ -11,44 +14,49 @@ export default function Gelila() {
 
             <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'></link>
             <div> 
-                <a id="arrow" href="./Home.js"> &larr; </a>
+                <Link class="arrow" to='/'> &larr; </Link>
+                <h1> Gelila Kebede </h1>
             </div>
 
+            <div>
+                {/**<img class="plain" src={branch1} /> */} 
+                <img class="personal" src={gelila} alt="Gelila headshot"/>
+                {/**<img class="plain" src={branch2} /> */} 
+            </div>
+            
 
-            <img class="personal" src={gelila} />
-
-            <div class="text-box"> 
-                <h3> CURRENT PLAYLIST</h3>
-                <iframe title="spotify" src="https://open.spotify.com/embed/playlist/3ymptxxvAwKVUjYjKFjtyR?utm_source=generator&theme=0" width="50%" height="400" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="text-box text-box-personal">
+                <h2> CURRENT PLAYLIST</h2>
+                <iframe title="spotify" src="https://open.spotify.com/embed/playlist/3ymptxxvAwKVUjYjKFjtyR?utm_source=generator&theme=0" width="75%" height="400" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
 
-            <div class="text-box"> 
-                <h3> MOVIES + SHOWS </h3>
+            <div class="text-box text-box-personal"> 
+                <h2> MOVIES + SHOWS </h2>
 
-                <div class="row">
-                    <div class="column">
-                        <img class="movies" src={succession} />
+                <div class="movies_container">
+                    <div class="movie1">
+                        <img class="movies" src={succession} alt="succession poster"/>
                         <p> Succession </p>
                     </div>
-                    <div class="column">
-                        <img class="movies" src={beautiful_boy} />
-                        <p> Beautiful Boy </p>
+                     <div class="movie2">
+                         <img class="movies" src={beautiful_boy} alt="beautiful_boy poster"/>
+                         <p> Beautiful Boy </p>
                     </div>
-                    <div class="column">
-                        <img class="movies" src={the_batman} />
+                    <div class="movie3">
+                        <img class="movies" src={the_batman} alt="the_batman poster"/>
                         <p> The Batman </p>
                     </div>
 
-                    <div class="column">
-                        <img class="movies" src={schitts_creek} />
+                    <div class="movie4">
+                        <img class="movies" src={schitts_creek} alt="schitts_creek poster"/>
                         <p> Schitt's Creek </p>
                     </div>
-                </div>
+                 </div>
             </div>
 
 
-            <div class="text-box"> 
-                <h3> HOBBIES </h3>
+            <div class="text-box text-box-personal"> 
+                <h2> HOBBIES </h2>
                 <div class="text_row">
                     <div class="text_column">
                         <h4> Dancing </h4>
@@ -67,8 +75,15 @@ export default function Gelila() {
                 </div>
             </div>
 
-            {/* still need to add boxes for social media icons */}
-
+            <div class="row">
+                <a href="https://www.instagram.com/gelila.kebede/" target="_blank" rel="noreferrer"> 
+                    <img class="icons" src={instagram} alt="instagram icon"/>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/gelila-kebede/" target="_blank" rel="noreferrer"> 
+                    <img class="icons" src={linkedin} alt="linkedin icon"/>
+                </a>
+            </div>
         </section>
     );
 
